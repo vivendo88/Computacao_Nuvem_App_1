@@ -1,36 +1,39 @@
 import streamlit as st
 
-# Cria 1 coluna (row1 é uma lista com 1 elemento)
+# --- Linha 1: 1 imagem grande ---
 row1 = st.columns(1)
-row2= st.columns(3)
 
-# Usa a primeira coluna para exibir a imagem
 with row1[0]:
     st.image(
         "rede.jpg",
-        caption="Monitoramente de Rede",
+        caption="Monitoramento de Rede",
         alt="Rede na palma da mão",
-        use_container_width=True,
+        width="stretch",
     )
+
+# --- Linha 2: 3 imagens lado a lado ---
+row2 = st.columns(3)
 
 with row2[0]:
     st.image(
         "obs.png",
         caption="Imagem 1",
-        alt="Obserbabilidade",
-        use_container_width=True,
+        alt="Observabilidade",
+        width="stretch",
     )
+
 with row2[1]:
     st.image(
         "mr.png",
         caption="Imagem 2",
         alt="Monitoramento da Rede",
-        use_container_width=True,
+        width="stretch",
     )
+
 with row2[2]:
     st.image(
         "vr.png",
         caption="Imagem 3",
-        alt="Visão de Relatorio",
-        use_container_width=True,
+        alt="Visão de Relatório",
+        width="stretch",
     )
