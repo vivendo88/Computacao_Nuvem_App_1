@@ -13,13 +13,6 @@ with row1[0]:
         use_container_width=True,
     )
 
-with row1[3]:
-    st.image(
-        "rede.jpg",
-        caption="Monitoramente de Rede",
-        alt="Rede na palma da mão",
-        use_container_width=True,
-    )
 with row2[0]:
     st.image(
         "obs.png",
