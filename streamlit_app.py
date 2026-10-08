@@ -1,5 +1,6 @@
-import streamlit as st
 
+import streamlit as st
+import os
 # --- Linha 1: 1 imagem grande ---
 row1 = st.columns(1)
 
